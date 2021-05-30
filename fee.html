@@ -46,6 +46,7 @@
         font-size: 7vw;
         font-family:'Lobster',cursive;
         text-align: center;
+        margin-top: 0%;
       }
  
       .child3{
@@ -54,16 +55,16 @@
          margin-top: 2em;
          padding-top: 1em;
       } 
-      table,tr,th,td{
-    border:2px rgb(21, 230, 202) ;
-    border-collapse: collapse;
-    padding:1.2vw;
-    border-spacing: 5px;
-    border-style:groove;
-    text-align: center;
-    height: 15vw;
-    font-weight: bold;
-}
+    table,tr,th,td{
+      border:2px rgb(21, 230, 202) ;
+      border-collapse: collapse;
+      padding:1.2vw;
+      border-spacing: 5px;
+      border-style:groove;
+      text-align: center;
+      height: 15vw;
+      font-weight: bold;
+      }
 
 td{
   color: black; 
@@ -93,7 +94,11 @@ th:hover{
 }
 .child4{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2.5em;
+    backdrop-filter: blur(7px);
+    
+    
+    padding-top:2em ;
 }
 .table2 {
   margin-left:13px !important;
@@ -142,8 +147,17 @@ a:hover{
   border-radius: 1.7em;
   margin-left: 0px;
   background-color:rgba( 30 ,30,30,0.4);
+  padding-bottom: 1em;
 }
-
+.grid2{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  width: 21.7em;
+  border-radius: 1.7em;
+  margin-left: 0px;
+  padding-bottom: 1em;
+  
+  
+}
 
 #circle{
   height: 20em;
@@ -173,37 +187,26 @@ a:hover{
             }
 }
 @media only screen  and ( min-width:768px){
+  
   .header {
         width: 35vw;
         height: 14vw;
         float: left;
-      
       }
       .child2{
         font-size: 5vw;
         font-family:'Lobster',cursive;
         text-align: center;
       }
-      .grid1{
-        grid-area: side;
-     }
-     .grid2{
-         grid-area: mn;
-     }
-     .grid3{
-         grid-area: ft1;
-     }
-     .grid4{
-       grid-area: ft2;
-     }
-     #maingrid{
-      display: grid;
-      grid-template-areas: "side" "mn" "ft1" "ft2";
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-            "side  mn"
-            "ft1  ft2";
-     }
+      .child4{
+        text-align: center;
+    margin-top: 2.5em;
+    backdrop-filter: blur(7px);
+    padding-top:2em ;
+    padding-bottom:1.2em ;
+    
+    width:17em ;
+      }
      .table1{
        width: 4vw;
        margin: left 30px !important;;
@@ -227,6 +230,16 @@ table,tr,th,td{
 }
 .grid1{
   text-align: center !important;
+  width: 40em;
+  margin-left: 20em;
+}
+.grid2{
+  width: 40em;
+  margin-left: 20em;
+  padding-bottom: 2em;
+}
+#circle{
+  margin-left: 15%;
 }
 .para1{
   font-size: 1.1em;
@@ -237,8 +250,8 @@ table,tr,th,td{
 }
 .para2{
   width: 300px !important;
-  margin-left: 140px;
-  margin-top: 20px;
+  margin-left: 30em;
+  margin-top: 4em;
 }
 .para1{
   width: 300px;
