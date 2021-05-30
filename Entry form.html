@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        body{
+            background-color:rgb(187, 187, 187);
+        }
+        .header{
+            
+            height: 8em;
+            position: relative;
+        }
+        img{ 
+            width:45vw;
+            padding-left: 1.5em;
+            margin-top: 15px;
+            height: 6em;margin-left: 15px;
+        }
+        .headerpara1{
+            padding-top:1em ;
+            
+        }
+        .headerpara1,.headerpara2{
+            text-align: center;
+           font-size: 25px;
+           text-shadow: .3px .2px;
+        }
+        .circle1{
+            height: 10em;
+            width: 10em;
+            background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+             position: relative;
+             background-size: 400% 400%;
+             border-radius: 50%;
+             animation-name: circle;
+             animation-timing-function: ease-in-out;
+             animation-duration: 9s;
+             animation-iteration-count: infinite;
+             animation-direction: alternate;
+            margin-left:-2em;
+             float: left;
+             margin-top: -2em;
+        }
+        @keyframes circle{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        .container{
+            position: absolute;
+            padding-left: 0.9em;
+            padding: 0.7em;
+            background-color: aquamarine;
+        }
+        .containerchild1{
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+        .makeup{
+            font-size: 18px;
+            margin-top: 1em;
+            margin-bottom: 1.3em;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: .7em;
+            
+        }
+        .containerchild2{
+            padding-left :0.5em;
+            margin-left:3.5em ;
+        }
+        .containerchild3{
+            margin-left:6em;
+        }
+        fieldset{
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        .formpart1div1{
+      margin-bottom: 0.6em;
+        }
+        .gmail{
+            margin-left: 2.5em;
+            margin-bottom: 0.6em;
+            padding-left: 0.5em;
+        }
+        .phone{
+            margin-left: 1em;
+            padding-left: 0.5em;
+            margin-bottom: 0.6em;
+        }
+        .pin{
+            margin-bottom: 2.5em;
+            margin-left:2.4em ;
+            padding-left: 0.4em;
+        }
+        .list{
+            margin-bottom: 1.2em;
+            margin-top: .2em;
+        }
+        .select{
+            margin-left: 2.5em;
+            margin-bottom: .7em;
+        }
+        .cardnumber{
+            margin-bottom:.7em;
+            padding-left: 0.4em;
+            margin-left: 0.3em;
+        }
+        .cvv{
+            margin-left: 5em;
+            margin-bottom: 0.7em;
+            padding-left: .4em;
+        }
+        .date{
+            padding-left: 0.3em;
+            margin-bottom: 0.9em;
+        }
+        .li{
+            margin-left: 5em;
+            margin-bottom: .4em;
+        }
+        .pay{
+            margin-left: 9em;
+            margin-top: .7em;
+            background-color: rgba(248, 101, 248, 0.952);
+            border-radius: 3em;
+            width: 25vw;
+            height: 8vw;
+        }
+        .footer{
+            margin-top: 1em;
+            display: flex;
+           justify-content: space-around;
+        }
+        .submit{
+            background-color: chartreuse ;
+            width:25vw ;
+            height: 8vw;
+            border-radius: 3em;
+        }
+        .reset{
+            background-color:rgb(82, 206, 255);
+            width:25vw ;
+            height: 8vw;
+            border-radius: 3em;
+        }
+      .pay:hover,.reset:hover,.submit:hover{
+            cursor: pointer;
+            background-color: wheat;
+        }
+        .formpart1{
+            background-color: burlywood;
+            padding-left: 7px;
+            padding-right: 4px;
+            padding-top: 4px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px ;
+        }
+        .formpart3{
+            background-color: rgb(173, 173, 173);
+            padding-left: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px ;
+        }
+         .formpart2{
+             margin-top: 1.5em;
+         }
+         @media only screen  and ( min-width:768px){
+            .container{
+            position: absolute;
+            padding-left: 0.9em;
+            padding: 0.7em;
+            background-color: aquamarine;
+            margin-left: 10em;
+        }
+             
+        .submit{
+            background-color: chartreuse ;
+            width:7em ;
+        height: 3em;
+            border-radius: 3em;
+        }
+        .reset{
+            background-color:rgb(82, 206, 255);
+            width:7em ;
+            height: 3em;
+            border-radius: 3em;
+        }
+        .pay{
+            margin-left: 25em;
+            margin-top: .7em;
+            background-color: rgba(248, 101, 248, 0.952);
+            border-radius: 3em;
+            width: 7em;
+            height: 3em;
+        }
+        .circle1{
+            height: 14em;
+            width: 14em;
+            background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+             position: relative;
+             background-size: 400% 400%;
+             border-radius: 100%;
+             animation-name: circle;
+             animation-timing-function: ease-in-out;
+             animation-duration: 9s;
+             animation-iteration-count: infinite;
+             animation-direction: alternate;
+            margin-left:-2em;
+             float: left;
+             margin-top: -2em;
+        }
+        @keyframes circle{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        .headerpara1,.headerpara2{
+            text-align: center;
+           font-size: 25px;
+           text-shadow: .3px .2px;
+           margin-right: 6em;
+        }
+        .containerchild1{
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 1em;
+            margin-right:6em ;
+        }
+        .makeup{
+            margin-left: 3em;
+        }
+       
+         }
+    </style>
+</head>
+<body>
+  
+  <div class="header"> <div class="circle1"></div>
+    <p class="headerpara1">Fitness On</p>
+    <p class="headerpara2"> fire</p>
+</div> 
+
+    <form action="smartverma999@gmail.com">
+   <div class="container0">    <p class="containerchild1">Membership Form</p>
+        <hr>
+        <p class="makeup"> Required field are followed by *</p>
+    </div>   
+        <div class="container">
+       <div class="formpart1"> <h1>Contact Information </h1>
+        <p>Name: * <input class="containerchild2" type="text" name="Name" placeholder="name" required ></p>
+        <fieldset>
+            <legend>Gender * </legend>
+            <p class="containerchild3">
+            male <input type="radio" name="gender" id="male" required>
+            female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <div class="formpart1div1"><p class="border">Address:</p><textarea name="address" id="address" cols="40" rows="8" placeholder="write your full address"></textarea></div>
+        <p>Gmail: * <input  class="gmail" type="gmail" name="gamil" id="gmail" placeholder="pqrxyzxxx@gmail.com" required></p>
+        <p>Phone No.* <input type="number" class="phone" name="phone number" id="phone number" placeholder="96123*****" pattern="{9-0} {10}" required</p>
+        <p>Pincode: <input type="number" class="pin" name="pincode" id="pincode" placeholder="123456" pattern="{0-9} {7}" </p>
+       </div>
+        <div class="formpart2">
+            <h1> Conditions</h1>
+      <ul>
+          <li><legend>If you do any kind of physical damage while doing the gym or mental stress due to doing gym,then it's responsibility will be your own. * </legend></li> 
+          <p class="list"> <input type="checkbox" name="condotion" id="agree" required> agree </p>
+          <li> <legend> If you are doing any kind of lose in the gym,then you will have to pay it.*  </legend></li>
+          <p class="list"> <input type="checkbox" name="condotion" id="agree" required> agree </p>
+          <li> <legend>Your membership will end on time wheather you came or not and your money will not be refunded.*</legend></li>
+          <p class="list"> <input type="checkbox" name="condotion" id="agree" required> agree </p>
+    </ul> </div>
+    <div class="formpart3">
+         <h1> Payment Information </h1>
+         <p>Card Type: *
+            <select class="select" name="card_type" id="card_type" required>
+             <option value="">--Select a card type--</option>
+             <option value="Visa">Visa</option>
+             <option value="Rupay">Rupay</option>
+             <option value="Master">Master</option>
+            </select>
+        </p>
+        <p>Card Nuumber: * <input class="cardnumber" type="number" name="card_number"  id="card_number" pattern="{0-9} {16}" placeholder="1234-5678-2334-1122" required></p>
+        <p>CVV: * <input class="cvv" type="password" name="cvv" id="cvv"  pattern="{0-9} {3}"placeholder="456" required</p>
+        <p>Expiration date: * <input class="date" type="date" name="expiry_date" id="expiry_date" required</p>
+        <p>Other options</p>
+        <ul>
+            <li class="li">Google pay</li>
+            <li class="li">Amazon pay</li>
+            <li class="li">Phone pay</li>
+        </ul>
+        <p>UPI id:8009997671@apl</p>
+        <P ><input class="pay" type="submit" value="Pay Now"></P> 
+    </div>
+    <div class="footer"> 
+    <div >    <P ><input class="reset" type="submit" value="Reset"></P> </div>
+    <div >    <P><input  class="submit" type="submit" value="submit"></P> </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>

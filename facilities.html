@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our facilities</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courtgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+paint&display=swap" rel="stylesheet">  
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+body{background-color: rgb(255, 242, 223);}
+       
+        #bg{
+            background-color: rgb(131, 139, 155);
+            border-radius: 20px;
+            margin-bottom: 20px;
+            width: 342px;
+            font-family:'Reggae One',cursive ;
+        }
+     .col-1{
+        text-align: center;
+         font-size:57px;
+         margin: 0%;
+         font-weight :90px;
+     }
+     .col-1:hover{
+       color: crimson;
+     }
+     #line-1{
+         margin-right: 8px;
+         width:300px;
+         border-radius: 5px;
+         
+     }
+     .line-0:hover{
+         border:4px rgb(255, 184, 53) solid;
+         border-radius: 9px;
+     }
+   
+     .line-5{
+         width: 300px;
+         margin-top:8vw;
+         margin-bottom:5vw;
+         border-radius: 5px;
+     }
+     .line-5:hover{
+          border: 5px rgb(235, 104, 43) solid;
+          border-radius: 30px;
+     }
+     .col-2{
+         margin: 0%;
+          font-size: 40PX;
+          text-align: center;
+          font-family: 'Chela One', cursive; 
+     }
+
+
+     .line-3{
+         box-shadow: 3px 3px 10px;
+         margin-bottom: 10px;
+         border-radius: 30px;
+         
+     }
+     .line-3:hover{
+         background-color: rgb(28, 195, 236);
+     }
+.container-1{
+    text-align: center;
+}
+     .div{
+         border-bottom: 5px magenta solid;
+         width: 345px;
+         border-radius: 30px;
+         margin-top: 30px;
+         margin-bottom: 10px;
+         text-align: center;
+     }
+     .div:hover{
+         background-color: white;
+     } 
+     .container-3{
+         text-align: center;
+     }
+     .container-4{
+         background-color: springgreen;
+         text-align: center;
+         border-radius: 60px;
+         border-bottom:3px orange solid;
+         margin-left: 3px;
+        
+     }
+     a{
+         text-decoration: none;
+         font-size: 40px;
+         font-weight: 900;
+         font-style: oblique;
+         cursor:pointer;
+     }
+     .line-7{
+         margin-left:40px;
+     }
+     .para{
+         font-size: 6vw;
+         font-family:'Lobster',cursive;
+         word-spacing: 2px;
+     }
+    
+     @media only screen and (min-width:768px){
+        .container-1{
+         position:relative;
+         border-radius: 27px;
+         text-align:center;
+         
+     }
+         #line-1{
+            margin-top:30px;
+          
+           margin-left: 3vw;  
+            float: left;
+             
+             
+         }
+         .para{
+             font-size: 2.5vw;
+             margin-top:35px;
+         }
+     
+    .div{
+        margin-left: 410px;
+        margin-top:130px;
+    } 
+    #line-4{
+        height: 400px;
+        margin-left: 200px;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+    .box-1{
+        grid-area: side;
+     }
+     .main{
+         grid-area: mn;
+     }
+     .footer{
+         grid-area: ft;
+     }
+     .container-3{
+      display: grid;
+      grid-template-areas: "side" "mn" "ft";
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-areas:
+            "side  mn"
+            "ft  ft";
+       gap: 10px;
+     }
+     #line-6{
+         width:400px;
+         margin-top: 40px;  
+         margin-bottom: 0%;
+         height: 400px;
+     }
+     
+     .container-4{
+          border-bottom: 9px rgb(255, 80, 80) solid;
+          border-radius: 30px;
+          margin-bottom: 20px;
+          transition: width 1s;
+          width: 1240px;
+     }
+  .container-4:hover{
+        width:300px;
+        margin-left: 430px;
+    }
+  #bg{
+      width:1250px;
+  }
+     }
+    </style>
+</head>
+<body>
+  <header> </header>
+  <div class="container-1">
+    <div id="bg">  <h1 class="col-1">Cardio Room</h1> </div>
+      <img class="line-0" id="line-1"src="cardio-1.jpg">
+      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur deserunt ab veniam commodi. Eos vel, itaque quidem amet eum laboriosaz.</p>
+  </div>
+  <div class="div">
+      
+         <h1 class="col-2">Cycling</h1>
+      </div>
+      
+      <div class="container-3"> 
+          <div class="box-1" > <img class="line-3" id="line-4" src="ClipartKey_86633.png"></div>
+          <div class="main"> <img class="line-5" id="line-6" src="cardio-3.jpg"></div>
+         <div class="footer"> <p class=para>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt nulla provident placeat, cum architecto voluptatem pariatur, odit natus fugit minima eligendi!</p></div>
+      </div>
+
+  <div class="container-4"> <a  href="trademill.html" target="_blank">Next</a>
+       <img style=" margin-top:5px;" class="line-7" src="red_arrow_PNG1.jpg" height="33px">     
+</div>
+</body>
+
+</html>
+ 

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership charge</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=work+sans&display=swap" rel="stylesheet">
+    <style>
+    .body{
+      margin-left: 0%;
+      padding-left: 0%;
+      background-color:black !important;
+    }
+     .header {
+        width: 60vw;
+        height: 50vw;
+        float: left;
+        margin-right: 2vw;
+      }
+      .container1{
+        animation-name: backgroundchange;
+        animation-timing-function: ease-in-out;
+        animation-duration: 13s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+        background-size: 600% 600%;
+        
+      }
+      @keyframes backgroundchange {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+                
+            }
+            100%{
+                background-position: 0 50%;
+                color: darkgrey;
+            }
+      }
+      .child2{
+        font-size: 7vw;
+        font-family:'Lobster',cursive;
+        text-align: center;
+      }
+ 
+      .child3{
+         text-align: center;
+         font-family: 'work sans',sans-serif;
+         margin-top: 2em;
+         padding-top: 1em;
+      } 
+      table,tr,th,td{
+    border:2px rgb(21, 230, 202) ;
+    border-collapse: collapse;
+    padding:1.2vw;
+    border-spacing: 5px;
+    border-style:groove;
+    text-align: center;
+    height: 15vw;
+    font-weight: bold;
+}
+
+td{
+  color: black; 
+}
+td:hover{
+  color:rgb(0, 143, 238);
+  font-size: 19px;
+}
+th{
+  color: rgb(243, 233, 89);
+}
+th:hover{
+  color:rgb(22, 76, 255);
+  font-size: 19px;
+}
+.para1{
+  font-size: 1.1em;
+  word-spacing: 2px;
+  text-align: left;
+  font-family:'Lobster',cursive;
+  margin-top: 2.1em;
+
+}
+.list{
+  margin-left:70px ;
+  font-size: 17px;
+}
+.child4{
+    text-align: center;
+    margin-top: 2em;
+}
+.table2 {
+  margin-left:13px !important;
+  
+  font-family:'Lobster',cursive;  
+}
+.para2{ 
+  text-align: center;
+  font-size: 17px;
+  word-spacing: 2px;
+  font-family:'Lobster',cursive;
+}
+.footer-container1{
+  position: relative;
+  background-image: url();
+  background-color: rgba(0, 0, 0, 0.712);
+  text-align: center;
+  padding-top: 18vw;
+  padding-bottom:3vw;
+  clip-path: ellipse(100% 100% at 4.5% 100%);
+}
+.footer-container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 7px;
+  border-bottom: 5px white solid;
+  border-radius: 70%;
+ padding-bottom: 4vw;
+}
+.footerchild2{
+margin-top: 0%;
+}
+.footerchild{
+margin-bottom: 20px;
+font-size: 6vw;
+text-align: left ;
+margin-top: 30px;
+}
+a:hover{
+  cursor: pointer;
+}
+.grid1{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  width: 21.7em;
+  border-radius: 1.7em;
+  margin-left: 0px;
+  background-color:rgba( 30 ,30,30,0.4);
+}
+
+
+#circle{
+  height: 20em;
+  width: 20em;
+  position:absolute;
+  background:linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+  background-size: 400% 400%;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-timing-function: ease-in-out;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: -1;
+  margin-top: -7em;
+  margin-left: -6em;
+}
+@keyframes circle{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+}
+@media only screen  and ( min-width:768px){
+  .header {
+        width: 35vw;
+        height: 14vw;
+        float: left;
+      
+      }
+      .child2{
+        font-size: 5vw;
+        font-family:'Lobster',cursive;
+        text-align: center;
+      }
+      .grid1{
+        grid-area: side;
+     }
+     .grid2{
+         grid-area: mn;
+     }
+     .grid3{
+         grid-area: ft1;
+     }
+     .grid4{
+       grid-area: ft2;
+     }
+     #maingrid{
+      display: grid;
+      grid-template-areas: "side" "mn" "ft1" "ft2";
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+            "side  mn"
+            "ft1  ft2";
+     }
+     .table1{
+       width: 4vw;
+       margin: left 30px !important;;
+     }
+     .table2 {
+  font-family:'Lobster',cursive;  
+}
+.table2,tr,th,td{
+  margin-left: 100px !important;
+}
+table,tr,th,td{
+    border:2px rgb(21, 230, 202) ;
+    border-collapse: collapse;
+    padding:1.2vw;
+    border-spacing: 5px;
+    border-style:groove;
+    text-align: center;
+    height: 3vw !important;
+    font-weight: bold;
+    margin-left: 85px;
+}
+.grid1{
+  text-align: center !important;
+}
+.para1{
+  font-size: 1.1em;
+  word-spacing: 2px;
+  text-align: left;
+  font-family:'Lobster',cursive;
+  margin-top: 1.5em !important;
+}
+.para2{
+  width: 300px !important;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+.para1{
+  width: 300px;
+}
+ul{
+  margin-left: 80px !important;
+}
+.footer-container1{
+  position: relative;
+  background-image: url();
+  background-color: rgba(0, 0, 0, 0.712);
+  text-align: center;
+  padding-top: 12vw;
+  padding-bottom:3vw;
+  clip-path: ellipse(100% 100% at 4.5% 100%);
+}
+.footerchild{
+margin-bottom: 20px;
+font-size: 3vw;
+text-align: left ;
+margin-top: 30px;
+}
+.footer-container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 7em;
+  border-bottom: 5px white solid;
+  border-radius: 70%;
+ padding-bottom: 4vw;
+  
+}
+.footerchild2{
+margin-top: 0%;
+font-size: 30px;
+
+}
+}
+    </style>
+</head>
+<body>
+  <header><div class="container1"><img  class="header" src="fitness on fire  logo.jpg">
+          <h1 class="child2">The more you do , the more you perfect.</h1>
+        </div>
+  </header>
+ <div id="maingrid"><div class="grid1"> <h1 class="child3">Fee Structure</h1>
+   <table class="table1">
+  <thead>
+    <tr>
+      <th>Types of memberships</th>
+      <th>Gym fee</th>
+      <th>Snooker fee</th>
+      <th>Gym+Snooker fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Monthly fee</th>
+      <td>2000/-</td>
+      <td> 1500/-</td>
+      <td>3350/-</td>
+    </tr>
+<tr>
+  <th>Quarterly fee</th>
+  <td>5850/-</td>
+  <td>4350/-</td>
+  <td>9,700/-</td>
+</tr>
+<tr>
+  <th>Half yearly fee</th>
+  <td>11,000/-</td>
+  <td>7,500/-</td>
+  <td>18,000/-</td>
+</tr>
+<tr>
+  <th>Yearly fee</th>
+  <td>21,000/-</td>
+  <td>13,500/-</td>
+  <td>34500/-</td>
+</tr>
+  </tbody>
+</table>
+<ul><li><p class="para1">Without taking any membership you can play snooker:<p></li></ul>
+  <ul>
+      <li class="list"> One hour:100/-</li>
+      <li class="list">Two hours:180/-</li>
+  </ul></div>
+  <div id="circle"></div>
+  <div class="grid2"> <h1 class="child4">Opening and Closing time</h1>
+  <table class="table2">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Morning time</th>
+        <th>Evening time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Monday</th>
+        <td>06:00-10:00</td>
+        <td>05:00-9:00</td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td>06:00-10:00</td>
+        <td>05:00-9:00</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>06:00-10:00</td>
+        <td>05:00-9:00</td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td>06:00-10:00</td>
+        <td>05:00-9:00</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td>06:00-10:00</td>
+        <td>05:00-9:00</td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td>05:00-10:00</td>
+        <td>04:30-9:00</td>
+      </tr>
+    </tbody>
+  </table></div>
+<div class="grid4"> <p class="para2">Sunday is a holiday for you enjoy it and recover yourself of the next day.</p>
+</div></div>
+<footer>
+  <p class="footerchild">For more information or any query:</p>
+  <div class="footer-container1">
+    
+    <p class="footerchild2">*Contact us*</p>
+    <div class="footer-container2">
+      <div> 
+        <a href="#" target="_blank"> <img  style="height: 60px; width: 60px;" src="whatsapplogo.png"></a> 
+      </div>
+     <div>
+             <a href="https://www.instagram.com/divyverma456" target="_blank" ><img  style="height: 60px; width: 60px;" src="instalogo.jpg"></a>
+     </div>
+     <div> 
+         <a  href="https://www.twitter.com/@H80241664" target="_blank"> <img   style="height: 60px; width: 60px;"src="twitter.jpg"></a>
+     </div>
+    </div>
+    <a class="gmail " style="color:tomato" href="Gmail.html"target="_blank">Gmail:fitnessonfire@gmail.com</a>
+  </div>
+</footer>
+</body></html> 

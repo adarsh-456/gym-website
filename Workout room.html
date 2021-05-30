@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout room</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courtgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+paint&display=swap" rel="stylesheet">    
+    <style>
+        body{
+            margin:0%;
+            margin-left: 2px;
+            margin-right:2px;
+            
+        }
+        .container-1{
+            margin-top: 9vw;
+            animation-name: backgroundchange;
+             animation-timing-function: ease-in-out;
+             animation-duration: 9s;
+             animation-iteration-count: infinite;
+             animation-direction: alternate;
+             background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+             position: relative;
+             background-size: 400% 400%;
+        }
+        @keyframes backgroundchange {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        .line-1{
+         float:right ;
+         display: block;
+         width:130px;
+         font-family:'Lobster',cursive;
+         font-size: 22px;
+         font-weight: 1000;
+         margin-top: 0%;
+        color: coral;
+        text-shadow:1px 1px rgb(115, 84, 255);
+        }
+        .line-2{
+            width:200px;
+        }
+        .line-3{
+           text-align: center;
+           border-bottom: 4px crimson solid;
+           border-top: 4px lime solid;
+           border-radius: 30px;
+           font-family:'Reggae One',cursive ;
+           font-size: 37px;
+           color: rgb(252, 128, 79);
+           animation-name: border;
+           animation-iteration-count: infinite;
+           animation-duration: 3s;
+           animation-direction: alternate;
+           animation-timing-function: linear;
+           margin-top: 25vw;
+        }
+        @keyframes border{
+            0%{
+                border-bottom: 4px crimson solid;
+                border-top: 4px lime solid;
+            }
+            100%{
+                  border-bottom:  4px lime solid;
+                border-top:4px crimson solid;
+            }
+        }
+        
+        .box-1{
+            width: 200px;
+            border-radius: 5px;
+            float:left;
+            margin-right: 14px;
+        }
+        .line-4{
+           font-size: 20px; 
+           font-family:'Lobster',cursive;
+           word-spacing: 3px;
+        }  
+        .container-3{
+            position: relative;
+            text-align: center;
+        }  
+        
+        .line-5{
+            text-align: center;
+            animation-name: dance;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            color:red;
+            font-family: 'Chela One', cursive;
+           
+            font-size: 38px;
+        } 
+        @keyframes dance{
+            0%{
+                color:crimson ;
+            }
+            25%{
+                color: darkgreen;
+            }
+            50%{
+                color: darkslateblue;
+            }
+            75%{
+                color: yellow;
+            }
+            100%{
+                color:rgb(255, 128, 149);
+            }
+        }    
+        .line-6{
+            width: 250px;
+            border-radius: 35%;
+            height: 200px;
+        }
+        .line-7{
+            border-bottom: 4px crimson solid;
+           border-top: 4px lime solid;
+           border-radius: 30px;
+           animation-name: bg;
+           animation-iteration-count: infinite;
+           animation-duration: 3s;
+           animation-direction: alternate;
+           animation-timing-function: linear;
+           height: 170px;
+           width: 70%;
+           word-spacing: 2px;
+           padding-left: 9px;
+           padding-top: 4px;
+           font-size: 19px;
+           font-family:'Mountaains of Christmas',cursive;
+           text-align: center;
+           margin-left: 45px;
+        
+        }
+        @keyframes bg{
+            0%{
+                border-bottom: 4px crimson solid;
+                border-top: 4px lime solid;
+            }
+            100%{
+                  border-bottom:  4px lime solid;
+                border-top:4px crimson solid;
+            } 
+    } 
+    .container-3{
+        border: 1.5px cornsilk solid;
+        border-radius: 30px; 
+        margin-top: 15vw;
+        box-shadow: 5px 5px 10px;
+        width: 95vw;
+        margin-left: 3px;
+    }
+    .container-4{
+        position: relative;
+        text-align: center;
+    }
+     .line-8::first-letter {
+         font-size: 50px;
+         color: rgb(255, 41, 41);
+     }   
+     .line-8{
+        text-align: center;color: rgb(148, 104, 252);
+        margin-top:45px;
+        border-bottom:4px darkgoldenrod solid;
+        border-radius: 50px;
+       margin-top:20vw;
+       font-family:'Itim',cursive;
+     }
+     .line-9{
+         width: 250px;
+        border-radius:50%;
+        
+     } 
+     .line-10{
+         margin-bottom: 0%;
+         color: crimson;
+        font-family:'finger paint',cursive  ;
+     }
+     .line-10::first-letter{
+         font-size: 40px;
+         color: rgb(23, 199, 23);
+     }
+     .container-0{
+        display: inline-flex;     
+     }
+   
+     .box-0{
+         text-decoration: none;
+         padding: 5px;
+         color: black;
+         margin-top:20px;
+         margin-left: 7px;
+         font-weight: bold;
+         font-size: 4.2vw;
+         font-family: 'Courtgette',cursive;
+     }
+     .box-00{
+         text-decoration: none;
+           color: black;
+           font-family:  'Abril Fatface',cursive;
+          
+          font-weight: bolder;
+     }
+     .box-00::first-letter{
+         font-size: 10vw;
+     }
+     a:hover{
+         color:blue;
+         text-decoration: underline;
+         cursor: pointer;
+     }
+     a:visited:hover{
+         color: blue;
+     }
+     a:visited{
+         color: purple;
+     }
+     header{
+         border-bottom: 3px orangered solid;
+         border-radius: 5px;
+     }
+     .line-11{
+         word-spacing: 2px;
+         font-family:'Mountaains of Christmas',cursive;
+         font-size: 5vw;
+         margin: 2px;
+     }
+    
+     @media only screen  and ( min-width:768px){
+            #navbar{
+                display: none;
+            }
+            #child1,#child2,#child3,#child4{
+                font-size: 2vw;
+                margin-bottom: 0%;
+                padding-bottom: 0%;
+            } 
+            #child1::first-letter{
+                font-size: 60px;
+            }
+            #child1{
+                font-size: 25px;
+                margin-left: 15px;
+            }
+            #child2{
+              margin-left: 600px;
+              margin-top:35px
+
+            }
+            #child3{
+              margin-left:30px;
+              margin-top:35px
+            }
+            #child4{
+              margin-left:30px;
+              margin-top:35px;
+            }
+         .container-1{
+             position:relative;
+             margin-top: 60px;
+             margin-bottom: 0px;  
+         }
+         #child5{
+             margin-right: 60px;
+             font-size: 62px;
+             width: 430px;
+             margin-top: 0%;
+             padding-top:0% ;
+         }
+         #child6{
+             margin-left :100px;
+             width: 400px;
+             margin-top: 30px;
+         }
+          
+          .line-3{
+              margin-top: 190px;
+          }
+          .grid{
+              display:grid;
+              grid-template-columns: 33% 33% 33%;
+              column-gap: 17vw;
+          }
+          .container-2{
+              width: 300px;
+            
+              margin-left: 6vw;
+              text-align: center;
+              
+          }
+          .box-1{
+              width: 280px;
+              margin-bottom: 4vw;
+              margin-top: 2vw;
+              margin-left: .7vw;
+          }
+
+          .container-3{
+              width: 300px;
+              margin-left: 40px;
+              
+          }
+          .line-6{
+              margin-top: 5px;
+          }
+          .line-7{
+              height: 200px;
+              
+          }
+          
+          .container-4{
+              margin-top: 18px;
+              
+          }
+          .line-8{
+              margin-top:14vw ;
+          }
+
+          .line-10{
+              margin-bottom: 3vw;
+          }
+          .line-11{
+              font-size: 1.5vw;
+              text-align: center;
+              margin:0%;
+              
+          }
+     }
+    </style>
+</head>
+
+<body>
+    <header>
+         <nav class="container-0" id="navbaar">
+            <a class="box-00" id="child1" href="index.html" target="_blank">Home</a> 
+            <a class="box-0"  id="child2"href="facilities.html "target="_blank">Facilities</a>
+            <a class="box-0"   id="child3" href="fee.html" target="_blank">Fee structure</a>
+            <a class="box-0" id="child4"href="entry.html" target="_blank">Entry form</a>
+        </nav>  
+    </header>
+    <div class="container-1">
+    <p class="line-1" id="child5"> All progress takes place outside the comfort zone. </p>
+  <img class="line-2" id="child6" src="Gym-Free-Download-PNG.png">
+</div>
+<div class="grid"><div class="container-2">
+    <h1 class="line-3">Workout Room</h1>
+    <img class="box-1" src="workout room.jpg">
+    
+    <p class="line-4">Definition of really good workout: when you hate doing it, but you love finishing it.</p>
+</div>
+    <div class="container-3"> 
+    
+    <img class="line-6" src="gym-dance-studio.jpg"> 
+    <h1 class="line-5"  style="margin-bottom:0%"> Dancing </h1> <h1 class="line-5" style="margin-top:0%">room </h1>
+    <p class="line-7">If you are good then we will make you better,If you are better then we will make you best and If you are best we will leave you perfect</p>
+    </div>  
+    <div class="container-4">
+        <h1 class="line-8">Gaming Room</h1>
+        
+        <img class="line-9" src="snooker.jpg">
+        <h1 class="line-10">Snooker</h1>
+        <p class="line-11">Lorem ipsum dolor sit amet,</p> <p  class="line-11">consectetur adipisicing.</p><p class="line-11">  elitArchitecto,</p><p class="line-11">  nemo.</p> 
+    </div></div>
+    <hr><hr>
+</body>
+</html>
